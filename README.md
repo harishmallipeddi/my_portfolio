@@ -36,7 +36,7 @@ yarn dev
 pnpm dev
 ```
 
-Open [http://localhost:3000](http://localhost:3000) with your browser to see the website.
+Open https://my-portfolio-kappa-three-83.vercel.app/ with your browser to see the website.
 
 ## 📝 Customization
 

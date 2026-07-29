@@ -40,6 +40,7 @@ export const personalInfo = {
   location: "Hyderabad, India",
   github: "https://github.com/harishmallipeddi",
   linkedin: "https://www.linkedin.com/in/harishmallipeddi-aiml",
+  resume: "/MALLIPEDDI_HARISH_Resume.pdf",
   summary: "Enthusiastic Computer Science (AI & ML) student with strong knowledge of Python, SQL, DBMS, OOP, Data Structures, and Software Development Fundamentals. Experienced in building academic and internship projects involving machine learning, data analysis, and database management. Adept at writing clean, efficient code, analyzing data, and solving complex problems with a logical approach. A fast learner with a growth mindset, strong collaboration skills, and a passion for emerging technologies. Looking to contribute as an IT & Digital Technologies Intern while expanding technical expertise and supporting the development of innovative, AI-driven solutions.",
   aboutStory: "I am a B.Tech Computer Science student specializing in Artificial Intelligence and Machine Learning. My passion lies in solving real-world challenges using data-driven approaches and AI models. From processing raw data to building scalable predictive systems, I enjoy the entire lifecycle of software and model development. I have hands-on experience in machine learning frameworks, data visualization libraries, and modern APIs.",
 };

@@ -3,7 +3,7 @@
 import React from "react";
 import { motion } from "framer-motion";
 import { personalInfo } from "@/data/portfolioData";
-import { Award, BookOpen, Heart, User, Sparkles, GraduationCap } from "lucide-react";
+import { Award, BookOpen, Heart, User, Sparkles, GraduationCap, FileDown } from "lucide-react";
 
 export default function About() {
   const cards = [
@@ -69,6 +69,20 @@ export default function About() {
               <span className="text-xs text-slate-500 dark:text-slate-400">Core ML Projects</span>
             </div>
           </div>
+
+          {/* Resume Download CTA */}
+          {personalInfo.resume && (
+            <div className="pt-2">
+              <a
+                href={personalInfo.resume}
+                download
+                className="inline-flex items-center space-x-2 px-5 py-2.5 rounded-xl font-semibold text-white bg-gradient-to-r from-primary-600 to-indigo-600 hover:from-primary-700 hover:to-indigo-700 transition-all text-sm shadow-md shadow-primary-500/10 hover:shadow-primary-600/20"
+              >
+                <FileDown className="w-4 h-4" />
+                <span>Download My Full Resume</span>
+              </a>
+            </div>
+          )}
         </motion.div>
 
         {/* Right Column - Cards Layout */}

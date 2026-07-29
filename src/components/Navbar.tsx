@@ -65,6 +65,16 @@ export default function Navbar() {
             </a>
           ))}
           
+          {personalInfo.resume && (
+            <a
+              href={personalInfo.resume}
+              download
+              className="text-xs font-semibold px-3.5 py-1.5 rounded-full bg-primary-600 text-white hover:bg-primary-700 transition-colors shadow-sm"
+            >
+              Resume
+            </a>
+          )}
+
           {/* Light/Dark Toggle */}
           <button
             onClick={toggleTheme}
@@ -123,6 +133,16 @@ export default function Navbar() {
                   {link.name}
                 </a>
               ))}
+              {personalInfo.resume && (
+                <a
+                  href={personalInfo.resume}
+                  download
+                  onClick={() => setIsOpen(false)}
+                  className="w-full py-2 text-base font-bold text-primary-600 dark:text-cyanCustom-400 border-b border-slate-200/50 dark:border-slate-800/50"
+                >
+                  Download Resume
+                </a>
+              )}
             </div>
           </motion.div>
         )}

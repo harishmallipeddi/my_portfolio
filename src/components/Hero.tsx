@@ -3,7 +3,7 @@
 import React from "react";
 import { motion } from "framer-motion";
 import { personalInfo } from "@/data/portfolioData";
-import { ArrowRight, Mail, Github, Linkedin, Brain, TrendingUp } from "lucide-react";
+import { ArrowRight, Mail, Github, Linkedin, Brain, TrendingUp, FileDown } from "lucide-react";
 
 export default function Hero() {
   const containerVariants = {
@@ -76,7 +76,7 @@ export default function Hero() {
           {/* Action CTAs */}
           <motion.div
             variants={itemVariants}
-            className="flex flex-col sm:flex-row justify-center items-center gap-4 pt-4"
+            className="flex flex-col sm:flex-wrap md:flex-row justify-center items-center gap-4 pt-4"
           >
             <a
               href="#projects"
@@ -85,6 +85,17 @@ export default function Hero() {
               <span>View My Work</span>
               <ArrowRight className="w-4 h-4" />
             </a>
+
+            {personalInfo.resume && (
+              <a
+                href={personalInfo.resume}
+                download
+                className="w-full sm:w-auto px-8 py-3.5 rounded-full font-semibold text-white bg-gradient-to-r from-cyanCustom-600 to-primary-600 hover:from-cyanCustom-700 hover:to-primary-700 shadow-lg shadow-cyanCustom-500/20 hover:shadow-cyanCustom-700/30 flex items-center justify-center space-x-2 transition-all transform hover:-translate-y-0.5"
+              >
+                <FileDown className="w-4 h-4" />
+                <span>Download Resume</span>
+              </a>
+            )}
 
             <a
               href="#contact"
